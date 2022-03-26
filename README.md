@@ -39,11 +39,7 @@ cp DocumentCollector/db.sqlite PaperDownloader/
 ```
 6. Run this Projiect
 ```bash
-bash run.sh
-```
-7. Update db
-```bash
-bash update_db.sh
+python runSpider.py
 ```
 
 
