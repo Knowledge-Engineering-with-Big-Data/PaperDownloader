@@ -41,8 +41,12 @@ cp DocumentCollector/db.sqlite PaperDownloader/
 ```bash
 python runSpider.py
 ```
-
-
+7. Synchronize the PDF to the database (so that the obtained PDF is no longer submitted to the task)
+```bash
+cd wos_crawl
+python updateFilesToDb.py
+```
+8. Perform Steps 7 and 8 several times to ensure that more PDFS are obtained.
 
 
 ## Authors

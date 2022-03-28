@@ -26,12 +26,12 @@ def updateToDb():
     session.close()
 
 
-
-while True:
-    beforePdfSize = len(os.listdir(FILES_STORE))
-    cmdline.execute('scrapy crawl wos_spider'.split())
-    pdf_list = os.listdir(FILES_STORE)
-    updateToDb()
-    if len(pdf_list)<=beforePdfSize:
-        print("FINISHED GETTING PDF FILES!")
-        break
+cmdline.execute('scrapy crawl wos_spider'.split())
+# while True:
+#     beforePdfSize = len(os.listdir(FILES_STORE))
+#     cmdline.execute('scrapy crawl wos_spider'.split())
+#     pdf_list = os.listdir(FILES_STORE)
+#     updateToDb()
+#     if len(pdf_list)<=beforePdfSize:
+#         print("FINISHED GETTING PDF FILES!")
+#         break
