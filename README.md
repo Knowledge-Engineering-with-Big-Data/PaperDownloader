@@ -46,7 +46,7 @@ python runSpider.py
 cd wos_crawl
 python updateFilesToDb.py
 ```
-8. Perform Steps 7 and 8 several times to ensure that more PDFS are obtained.
+8. Perform Steps 6 and 7 several times to ensure that more PDFS are obtained.
 
 
 ## Authors
